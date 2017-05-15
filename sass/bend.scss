@@ -1,0 +1,175 @@
+//Bend Colors//
+$bend-orange: #f70;
+$bend-orange-hover: #d66400;
+
+$bend-dr-gray: #585852;
+
+$bend-lt-blue: #64bfd3;
+$bend-lt-blue-hover: #44B2C3;
+
+//Bend fonts
+$bend-title-font: "MuseoSlab", "Museo Slab", Georgia,"Times New Roman",Times,serif;
+$bend-body-font: "MuseoSans", "Museo Sans",Helvetica,Arial,sans-serif;
+
+//Bend style overrides//
+body {
+  font-family: "MuseoSans", "Museo Sans",Helvetica,Arial,sans-serif;
+  color: $bend-dr-gray;
+}
+
+h1, h2, h3, h4 {
+  font-family: "MuseoSlab", "Museo Slab",Georgia,"Times New Roman",Times,serif;
+  color: $bend-orange;
+}
+
+
+.navbar {
+    text-align: center;
+    border-bottom: 3px solid rgba(0,0,0,.25);
+    padding: 20px 10px 7px 10px;
+    margin-bottom: 20px;
+    background: url(../images/bend-assets/checkers-light.gif) left top repeat;
+}
+
+.tds-brand {
+    width: 300px;
+    height: 40px;
+    margin: 0px auto;
+    background: url(../images/bend-assets/bbb-website-logo_@2x.png) no-repeat center top;
+    background-size: 300px auto;
+}
+
+
+//Bootstrap overides//
+.panel {
+  box-shadow: none;
+  h1 {
+    text-align: center;
+    margin: 0 0 13px 0;
+  }
+  label {
+    font-family: $bend-body-font;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  .panel-body {
+    padding-top: 0;
+  }
+}
+
+//text links
+a {
+  color: $bend-orange;
+  text-decoration:underline;
+  &:link, &:active, &:visited {
+    color: $bend-orange-hover;
+  }
+  &:hover, &:focus {
+    color: $bend-orange;
+  }
+}
+
+
+//button links
+.btn.btn-primary, .btn.btn-default {
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-color: transparent;
+  font-family: $bend-title-font;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.5);
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn.btn-primary {
+  background-color: $bend-orange;
+  &:hover, &:focus {
+    background-color: $bend-orange-hover;
+  }
+}
+
+.btn.btn-default {
+  background-color: $bend-lt-blue;
+  &:hover, &:focus {
+    background-color: $bend-lt-blue-hover;
+  }
+}
+
+a.btn.btn-primary, a.btn.btn-default {
+  color: #ffffff;
+  text-decoration:none;
+  &:link, &:active, &:visited {
+    color: #ffffff;
+  }
+  &:hover, &:focus {
+    color: #ffffff;
+  }
+}
+
+//Forms//
+.form-control {
+  height: 44px;
+  border: solid 1px #ccc;
+  border-radius: 2px;
+  padding: 6px 12px;
+  background-color: #ffffff;
+}
+
+//icons
+.login-icon {
+    background: url(../images/bend-assets/icon-bend-login.svg) no-repeat center top;
+    height: 100px;
+}
+
+//display_username
+.username-list {
+  padding-top: 10px;
+  a {
+    text-decoration: none;
+    &:hover {
+      background-color: $bend-orange;
+      color: white;
+      }
+    }
+  .list-group-item {
+  border-radius: 0;
+  border: solid 1px $bend-dr-gray;
+  font-weight: 500;
+  padding: 18px 18px 18px 60px;
+  text-align:left;
+  font-size:1.25em;
+  &:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  &:last-child {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  span:before {
+      content:" ";
+      background: url("../images/bend-assets/icon-bend-login.svg") no-repeat left top;
+      position: absolute;
+      top:12px;
+      left:10px;
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
+  span:after {
+      content:" ";
+      background: url("../images/ui/arrows/right-arrow-white.svg") no-repeat right top;
+      position: absolute;
+      top:19px;
+      right:10px;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

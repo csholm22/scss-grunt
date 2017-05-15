@@ -1,0 +1,192 @@
+//TOC
+// ====================================
+// BRAND COLOR PALETTE
+// OTHER UI COLORS
+// ALERT/STATUS MESSAGES
+// IMAGES
+// TYPOGRAPHY
+// INPUT STYLES
+// MOBILE BREAKPOINTS GLOBAL OVERRIDES
+// LAYOUT
+
+// BRAND COLOR PALETTE
+// ====================================
+
+// TDS Blue: main brand color and color of logo
+$tds-dkr-blue: #19388A;
+$tds-dk-blue: #19388A;
+$tds-blue-100: $tds-dk-blue;
+$tds-blue-80: #4760A1; //rollover color for blue-100
+$tds-blue-60: #7588B9;
+$tds-blue-40: #A3AFD0;
+
+// TDS Light Blue: main accent color
+$tds-lt-blue: #0C8FD0;
+$tds-lt-blue-100: $tds-lt-blue;
+$tds-lt-blue-80: #25ACF2; //rollover color for lt-blue-100
+$tds-lt-blue-60: #5CC1F5;
+$tds-lt-blue-40: #92D5F8;
+
+// TDS Green: secondary accent color, used for add to cart or to encourage buying
+$tds-dkr-green: #618e34;
+$tds-green: #6B9C22;
+$tds-green-100: $tds-green;
+$tds-green-80: #7BB227; //rollover color for green-100
+$tds-green-60: #9CC55D;
+$tds-green-40: #BDD893;
+
+// TDS Orange: tertiary accent color, used rarely to promote sale or deal
+$tds-orange-100: #C8600B;
+$tds-orange: #F37D1D;
+$tds-orange-80: $tds-orange; //rollover color for orange-100
+$tds-orange-60: #F69E56;
+$tds-orange-40: #F9BE8E;
+
+// OTHER UI COLORS
+// ====================================
+$tds-white: #FFF;
+$tds-black: #000;
+$tds-gray: #CCC;
+$tds-dk-gray-80: #777;
+$tds-dk-gray-60: #999;
+$tds-dk-gray-40: #BBB;
+
+//text color on header and footer
+$tds-headfoot-text-color: #cacaca;
+
+//hover color on header and footer dropdowns
+$tds-headfoot-hover-color: #2a2a2a;
+
+//borders on cards and inputs
+$tds-lt-gray: #D9D9D9;
+
+//search input or large blocks of gray
+$tds-ltr-gray: $tds-lt-gray; //#f5f5f5 wasn't visible on 2nd monitors
+
+// body copy on white like <p> and <li>
+$tds-dk-gray: #555;
+$tds-dkr-gray: #353535;
+
+// body text color
+$text-color: $tds-dk-gray;
+// radius reset
+$border-radius-base: 0 !important;
+// xrms box shadow setting
+$box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+//** `.form-group` margin
+$form-group-margin-bottom: 20px;
+
+// ALERT/STATUS MESSAGES
+// ====================================---
+
+// *informational
+$tds-lt-bluegray: #E8EBF3; //shopper ID status bar
+$state-info-bg: $tds-lt-bluegray;
+$state-info-text: $tds-dkr-gray;
+
+// *loading or status
+$tds-status: $tds-lt-blue-80;
+$tds-status-bg: #d6efff;
+
+// *warning yellow
+$tds-warning-yellow: #FFCE00;
+$state-warning-bg: #FFF8D8;
+
+// *error red
+$tds-red: #CB1D1D;
+$tds-critical-bg: #ffecec;
+
+// *success green
+$tds-success: $tds-green-100;
+$tds-success-bg: #E5F0D4;
+
+// bootstrap alert
+$state-danger-bg: $tds-critical-bg;
+
+// Bootstrap color overrides
+// ====================================
+$brand-primary: $tds-blue-100;
+$brand-success: $tds-green-100;
+$brand-info: $tds-lt-blue-100;
+
+// IMAGES
+// ====================================
+
+// single icons
+$tds-image-tv: "content/dam/tdstelecom/images/products/tv/icon-product-tv.svg";
+$tds-image-phone: "content/dam/tdstelecom/images/products/phone/icon-product-phone.svg";
+$tds-image-internet: "content/dam/tdstelecom/images/products/internet/icon-product-internet.svg";
+
+// bundle icons
+$tds-image-bundle2-internet-tv: "content/dam/tdstelecom/images/products/bundles/icon-bundle-internet-tv.svg";
+$tds-image-bundle2-internet-phone: "content/dam/tdstelecom/images/products/bundles/icon-bundle-internet-phone.svg";
+$tds-image-bundle2-tv-phone: "content/dam/tdstelecom/images/products/bundles/icon-bundle-tv-phone.svg";
+$tds-image-bundle3: "content/dam/tdstelecom/images/products/bundles/icon-bundle-triple.svg";
+
+// arrows
+$tds-image-arrow-gray-right: "content/dam/tdstelecom/sm-menu_arrow-gray.png";
+$tds-image-arrow-white-left: "content/dam/tdstelecom/left-arrow-white.svg";
+
+// font icons
+$fa-font-path: "/etc/designs/tds-foundation/tds-styles/bower_components/font-awesome/fonts";
+
+// TYPOGRAPHY
+// ====================================
+
+// font families
+$tds-font-family: "ITC Avant Garde Gothic W01", "Century Gothic", Arial;
+$tds-font-body: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial;
+
+// Font sizes
+$tds-font-xlight: 100; //works for avant garde only
+$tds-font-light: 200; //works for avant garde only
+$tds-font-thin: 300; //works for helvetica only
+$tds-font-normal: 400;
+$tds-font-medium: 500;
+$tds-font-bold: 600;
+$tds-font-heavy: 700;
+
+// Depricated font sizes
+$tds-font-size-light: $tds-font-xlight;
+$tds-font-size-normal: $tds-font-light;
+$tds-font-size-bold: $tds-font-normal;
+
+// page titles
+
+
+// INPUT STYLES
+// ====================================
+
+//border radius
+$input-border-radius: $border-radius-base;
+
+// MOBILE BREAKPOINTS GLOBAL OVERRIDES
+// ====================================
+
+// Replaces variable references in the bootstrap scss
+$screen-xxxs: 320px;
+$screen-xxs: 400px;
+$screen-xs: 584px;
+$screen-xs-min: $screen-xs;
+$screen-sm: 751px;
+$screen-sm-min: $screen-sm;
+$screen-md: 960px;
+$screen-md-min: $screen-md;
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+//LAYOUT
+// ====================================
+
+// Removes container width settings below 960px
+$container-tablet: 100%;
+
+// responsive padding inside page banners and around page content
+$tds-padding-lg: 40px;
+$tds-padding-md: 28px;
+$tds-padding-sm: 16px;

@@ -1,0 +1,58 @@
+//Valiation message
+.tds-alert {
+  padding: 15px;
+  p {
+    color: black;
+    &:last-child {
+    margin-bottom: 0;
+    }
+  }
+  margin:15px 0;
+  a {
+    color: black;
+    &:hover, :focus {
+      color: $tds-dkr-gray;
+    }
+  }
+  ul li {
+    list-style-type: square;
+    display: list-item;
+  }
+}
+
+.tds-alert.tds-alert-critical {
+  border-left: 3px solid $tds-red;
+  border-top: 0px;
+  background-color: $tds-critical-bg;
+  background-image: url("../images/ui/alerts/icon_alert-error.svg");
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  }
+
+  // Green = success
+.tds-alert.tds-alert-success {
+  border-left: 3px solid $tds-green ;
+  border-top: 0px;
+  background-color: #dff0d8;
+  background-image: url("../images/ui/alerts/icon_alert-success.svg");
+  background-size: 22px 22px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+//Forms
+  .form-group.has-error {
+      label {
+        color: $tds-red;
+      }
+      input {
+        background-color: $tds-critical-bg;
+        border-color: $tds-critical-bg;
+        &:focus {
+          border-color: $tds-red;
+        }
+      }
+  }

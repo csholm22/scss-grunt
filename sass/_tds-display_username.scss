@@ -1,0 +1,38 @@
+.username-list {
+  padding-top: 10px;
+  a {
+    text-decoration: none;
+    &:hover {
+      background-color: $tds-blue-100;
+      color: white;
+      }
+    }
+  .list-group-item {
+  border-radius: 0;
+  border: solid 1px $tds-gray;
+  font-weight: 500;
+  padding: 18px 18px 18px 60px;
+  text-align:left;
+  font-size:1.25em;
+  span:before {
+      content:" ";
+      background: url("../images/icon-login.svg") no-repeat left top;
+      position: absolute;
+      top:12px;
+      left:10px;
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
+  span:after {
+      content:" ";
+      background: url("../images/ui/arrows/right-arrow-white.svg") no-repeat right top;
+      position: absolute;
+      top:19px;
+      right:10px;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

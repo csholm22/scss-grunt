@@ -1,0 +1,234 @@
+@import "tds-fonts";
+@import "tds-variables";
+@import "tds-errors-alerts-warnings";
+@import "tds-display_username";
+
+//Typography//
+body {
+  font-family: $tds-font-body;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: $tds-dk-gray;
+}
+
+h1, h2, h3 , .h1, .h2, .h3{
+  font-family: $tds-font-family;
+  color: $tds-dk-blue;
+  margin-top: 0;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+h3, .h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+h4, .h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: red;
+}
+
+//text links
+a {
+  color: $tds-lt-blue;
+  text-decoration:underline;
+  &:link, &:active, &:visited {
+    color: $tds-lt-blue;
+  }
+  &:hover, &:focus {
+    color: $tds-lt-blue-80;
+  }
+}
+
+//button links
+.btn.btn-primary, .btn.btn-default {
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-color: transparent;
+  font-family: $tds-font-family;
+  text-align: center;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.5);
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn.btn-primary {
+  background-color: $tds-dk-blue;
+  &:hover, &:focus {
+    background-color: $tds-lt-blue;
+  }
+}
+
+.btn.btn-default {
+  background-color: $tds-lt-blue;
+  &:hover, &:focus {
+    background-color: $tds-lt-blue-80;
+  }
+}
+
+a.btn.btn-primary, a.btn.btn-default {
+  color: #ffffff;
+  text-decoration:none;
+  &:link, &:active, &:visited {
+    color: #ffffff;
+  }
+  &:hover, &:focus {
+    color: #ffffff;
+  }
+}
+
+//Logo header
+.tds-brand {
+  width: 98px;
+  height: 40px;
+  margin: 0px auto;
+  background: url("../images/tds-logo.svg") no-repeat center top;
+}
+
+//Bootstrap overides//
+.navbar {
+  text-align: center;
+  border-bottom: 2px solid #e3e3e3;
+  padding: 16px 10px;
+  margin-bottom: 20px;
+}
+.panel {
+  box-shadow: none;
+  h1 {
+    text-align: center;
+    margin: 0 0 13px 0;
+  }
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .panel-body {
+    padding-top: 0;
+  }
+}
+.panel-default {
+  border-color: transparent;
+}
+
+
+//Bootstrap overides end//
+
+//icons//
+.login-icon {
+  background: url("../images/icon-login.svg") no-repeat center top;
+  height: 100px;
+}
+
+// Forms
+.form-group {
+  margin: 0;
+  select {
+    background-color: #f5f5f5;
+  }
+  &:nth-child(2n+2)  {
+    margin-top: 15px;
+  }
+}
+.form-control {
+  height: 44px;
+  border: solid 2px $tds-gray;
+  border-radius: 0;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  &.readonly {
+    background-color: $tds-dk-gray-40;
+    border: solid 2px $tds-dk-gray-40;
+  }
+}
+
+form#set_security_questions_form {
+  margin-top: 0;
+}
+
+#set_security_questions_form {
+  .form-group {
+    margin: 0;
+
+    &:nth-of-type(2n+3) {
+    margin-top: 15px;
+    }
+    &:nth-of-type(2n+0) {
+    margin-top: 5px;
+    }
+    &:nth-of-type(2n+1) {
+    height:50px;
+    }
+  }
+}
+
+.ui-selectmenu-button.ui-button {
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    height: 44px;
+    border: solid 2px #CCC;
+    border-radius: 0;
+    padding: 12px;
+}
+
+.form-control.readonly {
+  cursor: no-drop;
+}
+
+//Account Sign Up Section
+section.accountSignUp {
+  text-align: center;
+  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3;
+  padding: 15px 0;
+  margin: 15px 0;
+
+  .btn.btn-primary {
+    margin: 0;
+  }
+  @media screen and (max-width: 480px)  {
+    padding: 10px 0;
+    h2 {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Contact Section
+section.contact {
+  font-family: $tds-font-family;
+  text-align: center;
+  a {
+    color: $tds-dk-blue;
+    text-decoration:none;
+    &:link, &:active, &:visited {
+      color: $tds-dk-blue;
+    }
+    &:hover, &:focus {
+      color: $tds-blue-80;
+    }
+  }
+}
+
+//Login
+.username {
+  text-align:center;
+  font-size: 16px;
+  margin-top:10px;
+}
